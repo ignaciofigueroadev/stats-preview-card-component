@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  gap: 0;
+  background-color: hsl(233, 47%, 7%);
+  padding: 1.875rem;
+}
+
+.main {
+  width: 22rem;
+  background-color: hsl(244, 38%, 16%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  border-radius: 8px;
+}
+
+.container {
+  background-color: #aa5cdb;
+  border-radius: 8px 8px 0 0;
+}
+.container__image--desktop {
+  display: none;
+}
+.container__image--desktop, .container__image--mobile {
+  opacity: 0.5;
+  border-radius: 8px 8px 0 0;
+}
+
+.description {
+  padding: 3rem 2.1875rem;
+  text-align: center;
+  display: grid;
+  gap: 20px;
+}
+.description__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.1875rem;
+}
+.description__title > span {
+  color: #aa5cdb;
+}
+.description__text {
+  color: hsla(0, 0%, 100%, 0.6);
+  margin: 0 0.25rem;
+  font-size: 0.85rem;
+}
+
+.stats {
+  text-align: center;
+  border-radius: 5px;
+  color: hsl(244, 38%, 16%);
+  background-color: #aa5cdb;
+  opacity: 0.8;
+}
+.stats__li {
+  margin: 2.1875rem;
+}
+.stats__li > p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  font-size: 1.5625rem;
+}
+.stats__li > span {
+  color: #aa5cdb;
+  font-size: 0.75rem;
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  color: hsl(244, 38%, 16%);
+}
+
+@media (width >= 1024px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75rem;
+  }
+  .container {
+    order: 2;
+    border-radius: 0 8px 8px 0;
+  }
+  .container__image--desktop {
+    display: block;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+  }
+  .container__image--mobile {
+    display: none;
+  }
+  .description {
+    padding: 80px;
+    order: 1;
+    text-align: start;
+  }
+  .description__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .description__text {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .stats {
+    border-radius: 5px;
+    color: hsl(244, 38%, 16%);
+  }
+  .stats__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: no-wrap;
+    gap: 0;
+  }
+  .stats__li > span {
+    color: hsl(244, 38%, 16%);
+  }
+}
+footer {
+  margin-top: 1000px;
+  position: absolute;
+}
+
+/*# sourceMappingURL=styles.css.map */

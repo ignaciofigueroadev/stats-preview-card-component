@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tooltip.css">
+
+  <script src="js/tooltip.js" defer></script>
+  <script src="https://kit.fontawesome.com/56ff8a14de.js" crossorigin="anonymous" defer></script>
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+</head>
+
+<body>
+
+  <main class="main">
+    <section class="container">
+      <img src="images/image-header-mobile.jpg" alt="Image illustration"
+        class="container__image container__image--mobile">
+      <img src="images/image-header-desktop.jpg" alt="Image illustration"
+        class="container__image container__image--desktop">
+    </section>
+
+    <section class="description">
+
+      <h1 class="description__title">Get <span>insights</span> that help your business grow.</h1>
+      <p class="description__text">Discover the benefits of data analytics and make better decisions regarding revenue,
+        customer experience, and overall efficiency.</p>
+
+      <section class="description__stats stats">
+        <ul class="stats__ul">
+          <li class="stats__li">
+            <p>10K+</p>
+            <span>companies</span>
+          </li>
+          <li class="stats__li">
+            <p>314</p>
+            <span>templates</span>
+          </li>
+          <li class="stats__li">
+            <p>12M+</p>
+            <span>queries</span>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="tooltip">
+      <div class="tooltip__text">
+        <h3 class="tooltip__name">Ignacio Figueroa</h3>
+        <div class="tooltip__socialmedias">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="tooltip__link" title="Twitter">
+            <i class="fa-brands fa-twitter tooltip__icon tooltip__icon--twitter"></i>
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer" class="tooltip__link" title="GitHub">
+            <i class="fa-brands fa-github tooltip__icon tooltip__icon--github"></i>
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin tooltip__icon tooltip__icon--linkedin"></i>
+          </a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img src="images/favicon-32x32.png" alt="Frontend Mentor" class="tooltip__icon" title="Frontend Mentor">
+          </a>
+        </div>
+      </div>
+      <img src="images/photo2-removebg-preview.jpg" alt="Ignacio Figueroa" class="tooltip__img">
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
